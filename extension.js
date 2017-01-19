@@ -46,14 +46,14 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "basicBot",
-      language: "english",
-      chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
+      botName: "IGCBot",
+      language: "czech",
+      chatLink: "https://rawgit.com/basicBot/source/master/lang/cs.json",
       scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
-      startupCap: 1, // 1-200
-      startupVolume: 0, // 0-100
-      startupEmoji: false, // true or false
+      startupCap: 50, // 1-200
+      startupVolume: 100, // 0-100
+      startupEmoji: true, // true or false
       autowoot: true,
       autoskip: false,
       smartSkip: true,
@@ -68,13 +68,13 @@
       maximumLocktime: 10,
       cycleGuard: true,
       maximumCycletime: 10,
-      voteSkip: false,
-      voteSkipLimit: 10,
+      voteSkip: true,
+      voteSkipLimit: 5,
       historySkip: false,
       timeGuard: true,
       maximumSongLength: 10,
       autodisable: false,
-      commandCooldown: 30,
+      commandCooldown: 20,
       usercommandsEnabled: true,
       skipPosition: 3,
       skipReasons: [
@@ -90,7 +90,7 @@
       afkRankCheck: "ambassador",
       motdEnabled: false,
       motdInterval: 5,
-      motd: "Temporary Message of the Day",
+      motd: "Vitej v IGC.",
       filterChat: true,
       etaRestriction: false,
       welcome: true,
