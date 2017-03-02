@@ -46,7 +46,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "// ICBoT \\",
+      botName: "ICBoT",
       language: "czech",
       chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
       scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
@@ -91,7 +91,7 @@
       motdEnabled: false,
       motdInterval: 5,
       motd: "Temporary Message of the Day",
-      filterChat: true,
+      filterChat: false,
       etaRestriction: false,
       welcome: true,
       opLink: null,
@@ -102,7 +102,7 @@
       website: null,
       intervalMessages: [],
       messageInterval: 5,
-      songstats: true,
+      songstats: false,
       commandLiteral: "!",
       blacklists: {
         NSFW: "https://rawgit.com/basicBot/custom/master/blacklists/NSFWlist.json",
