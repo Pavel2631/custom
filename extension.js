@@ -1,7 +1,7 @@
 (function () {
 
     // Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "basicBot";
+    var fork = "Pavel2631";
 
     // Define our function responsible for extending the bot.
     function extend() {
@@ -19,7 +19,7 @@
         //Extend the bot here, either by calling another function or here directly.
 
         // You can add more spam words to the bot.
-        var spamWords = ['spam1', 'spam2', 'spam3', 'spam4'];
+        var spamWords = [];
         for (var i = 0; i < spamWords.length; i++) {
           window.bot.chatUtilities.spam.push(spamWords[i]);
         }
@@ -60,7 +60,7 @@
       cmdDeletion: true,
       maximumAfk: 120,
       afkRemoval: true,
-      maximumDc: 60,
+      maximumDc: 120,
       bouncerPlus: true,
       blacklistEnabled: true,
       lockdownEnabled: false,
@@ -68,13 +68,13 @@
       maximumLocktime: 10,
       cycleGuard: true,
       maximumCycletime: 10,
-      voteSkip: false,
-      voteSkipLimit: 10,
-      historySkip: false,
+      voteSkip: true,
+      voteSkipLimit: 5,
+      historySkip: true,
       timeGuard: true,
-      maximumSongLength: 10,
+      maximumSongLength: 9,
       autodisable: false,
-      commandCooldown: 30,
+      commandCooldown: 20,
       usercommandsEnabled: true,
       skipPosition: 3,
       skipReasons: [
